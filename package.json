@@ -64,16 +64,5 @@
     "webpack-dev-server": "^4.9.2",
     "webpack-merge": "^5.8.0",
     "webpackbar": "^5.0.2"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{ts,tsx,js,vue}": [
-      "npm run lint:nofix --production"
-    ]
   }
 }
